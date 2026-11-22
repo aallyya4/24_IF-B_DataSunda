@@ -36,7 +36,7 @@ Proyek ini berangkat dari ketertarikan untuk mengetahui apakah perubahan tingkat
 
 ## Dataset dan Variabel
 
-Dataset utama: `WHI_Inflation (1).csv`
+Dataset utama: `WHI_Inflation.csv`
 
 Dataset menggabungkan informasi negara dan tahun dengan indikator inflasi serta sejumlah indikator yang berkaitan dengan skor kebahagiaan. Variabel yang digunakan dalam analisis utama meliputi:
 
@@ -96,8 +96,8 @@ Filter tahun dan wilayah pada dashboard memengaruhi ringkasan serta grafik ekspl
 ```text
 DataSunda_Dashboard/
 ├── app.py
-├── 24_IF_B_Data_Sunda_Progress4_Revisi_Diperbaiki.ipynb
-├── WHI_Inflation (1).csv
+├── 24_IF_B_Data_Sunda.ipynb
+├── WHI_Inflation.csv
 ├── requirements.txt
 └── README.md
 ```
@@ -115,16 +115,7 @@ DataSunda_Dashboard/
 
 ## Instalasi dan Cara Menjalankan
 
-### 1. Clone repository
-
-```bash
-git clone <URL-REPOSITORY-GITHUB>
-cd <NAMA-FOLDER-REPOSITORY>
-```
-
-Ganti `<URL-REPOSITORY-GITHUB>` dengan URL repository milik kelompok.
-
-### 2. Buat virtual environment (disarankan)
+### 1. Virtual environment
 
 Windows:
 
@@ -133,20 +124,13 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-macOS/Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Instal dependensi
+### 2. Instal dependensi
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Jalankan dashboard
+### 3. Jalankan dashboard
 
 ```bash
 streamlit run app.py
@@ -160,9 +144,9 @@ http://localhost:8501
 
 Pastikan file CSV berada satu folder dengan `app.py`, atau unggah dataset melalui fitur *file uploader* pada sidebar dashboard.
 
-### 5. Jalankan notebook
+### 4. Jalankan notebook
 
-Buka file `24_IF_B_Data_Sunda_Progress4_Revisi_Diperbaiki.ipynb` melalui Jupyter Notebook, JupyterLab, atau VS Code. Pastikan dataset CSV tersedia sesuai lokasi yang digunakan notebook, kemudian jalankan sel secara berurutan.
+Buka file `24_IF_B_Data_Sunda.ipynb` melalui Jupyter Notebook, JupyterLab, atau VS Code. Pastikan dataset CSV tersedia sesuai lokasi yang digunakan notebook, kemudian jalankan sel secara berurutan.
 
 ## Keterbatasan
 
